@@ -10,7 +10,7 @@ let markBMI = markMass / (markHeight ** 2);
 let johnBMI = johnMass / (johnHeight ** 2);
 
 if(markBMI > johnBMI){
-    console.log("Mark's BMI (${markBMI.toFixed(1)}) higher")
+    console.log("Mark's BMI higher" )
 } else if(johnBMI > markBMI){
     console.log("johnMBI higher")
 }else{

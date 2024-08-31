@@ -7,6 +7,14 @@ const isEvens = (number) => {
     //const isEvens = (number) => number % 2 === 0
 const evens = numbers.filter(isEvens);
 console.log(evens);
+//------use foreach
+let arr = []
+const evensUseForeach = numbers.forEach(element => {
+    if(element%2 === 0) 
+        arr.push(element);
+});
+console.log(arr);
+
 
 //------------------------------------------------------------------
 const students = [
@@ -16,6 +24,13 @@ const students = [
     { name: 'Sam', grade: 65 },
     { name: 'Katie', grade: 90 }
 ];
+
+
+
+const under90 = students.filter((item) => {
+    return item.grade < 90
+})
+console.log('Under 90 : ' + under90);
 
 //format
 const isU90 = function(item) {

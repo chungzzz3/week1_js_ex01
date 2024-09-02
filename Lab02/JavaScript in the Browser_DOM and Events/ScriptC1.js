@@ -6,7 +6,7 @@
     const displayText = document.getElementById('displayText');
     const displayScore = document.getElementById('displayScore');
     
-    let secretNumber = Math.floor(Math.random() * 3) //random từ 0 -10
+    let secretNumber = Math.floor(Math.random() * 3) //random từ 0 -3
     
 
     let score = 5
@@ -40,7 +40,7 @@
             inputNumber.value = ''
             score =5
             updateScore()
-            secretNumber = Math.floor(Math.random() *10)
+            secretNumber = Math.floor(Math.random() *3)
         })
     }
     function updateScore() {
